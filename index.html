@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cadastro / Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="tab-selector">
+        <button class="tab-btn active" data-tab="register">Cadastro</button>
+        <button class="tab-btn" data-tab="login">Login</button>
+      </div>
+
+      <form id="registerForm" class="tab-form active">
+        <input type="text" id="name" placeholder="Nome" required />
+        <input type="email" id="email" placeholder="E-mail" required />
+        <input type="password" id="password" placeholder="Senha" required />
+        <button type="submit">Cadastrar</button>
+      </form>
+
+      <form id="loginForm" class="tab-form">
+        <input type="email" id="loginEmail" placeholder="E-mail" required />
+        <input
+          type="password"
+          id="loginPassword"
+          placeholder="Senha"
+          required
+        />
+        <button type="submit">Login</button>
+      </form>
+    </div>
+
+    <div id="toast" class="toast">Mensagem</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Perfil</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="profile-wrapper">
+      <div class="profile-card">
+        <div class="profile-avatar" id="userAvatar">P</div>
+        <h2 id="userName">Usuário</h2>
+        <p class="points">Pontos: <span id="userPoints">0</span></p>
+
+        <div class="referral-card">
+          <p>Seu link de indicação:</p>
+          <div class="referral-box">
+            <input type="text" id="referralLink" readonly />
+            <button id="copyBtn">Copiar</button>
+          </div>
+        </div>
+
+        <button id="logoutBtn" class="logout-btn">Sair</button>
+      </div>
+    </div>
+
+    <div id="toast" class="toast">Link copiado!</div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
